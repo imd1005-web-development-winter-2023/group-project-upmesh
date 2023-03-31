@@ -29,6 +29,7 @@ Header
 #header {
   display: flex;
   align-items: center;
+  max-width: 100%
   justify-content: space-between;
   background-color: #224556;
   padding: 20px 40px;
@@ -126,19 +127,16 @@ Footer
 }
 
 
-.copyright {
+.copyright 
+{
   display: flex;
 }
-
-
-
-
-
 
 /*
   PAGE / BODY
 */
-body {
+body 
+{
   font-family: Arial, Helvetica, sans-serif;
   color: #707070;
   background-color: white;
