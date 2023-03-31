@@ -205,7 +205,10 @@ Footer
   background-color: var(--inStock);
   justify-content: center;
   text-align: center;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
   border-radius: 4rem;
   height: 0.3rem;
   width: 7rem;
@@ -226,7 +229,10 @@ Footer
   background-color: var(--outOfStock);
   justify-content: center;
   text-align: center;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
   border-radius: 4rem;
   height: 0.3rem;
   width: 8.5rem;
