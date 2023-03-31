@@ -109,13 +109,22 @@ subheader
 Footer
 */
 
-footer {
+.footerContent {
   background-color: #F2F2F6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
   padding: 67px 200px;
 }
+
+.topFooter
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 
 .copyright {
   display: flex;
