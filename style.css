@@ -29,7 +29,7 @@ Header
 #header {
   display: flex;
   align-items: center;
-  max-width: 100%
+  max-width: 100%;
   justify-content: space-between;
   background-color: #224556;
   padding: 20px 40px;
