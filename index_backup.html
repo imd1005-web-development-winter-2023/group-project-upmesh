@@ -38,32 +38,24 @@
             <form class="search">
               <label class="sr-only" for="">Search bar</label>
               <input name="search" id="search" type="text" required />
+              <!--<input type="submit" value="Search" />-->
+              <!--<img src="./images/icons/search.png">-->
             </form>
             <li>Home</li>
             <li><a href="index.html"></a>Shop</li>
             <li>Help</li>
-            <a href = "#" id="close"><img src="./images/icons/close.png" alt="close"></a>
           </ul>
         </div>
 
         <div>
           <ul id="icons">
-            <li>
-              <a href="cart.html">
-                <img src="./images/icons/shopping-cart.png">
-                <span id="cart-count" class="red-circle">0</span>
-              </a>
-            </li>
-            <li><img src="./images/icons/user.png" alt="user"></li>
+            <li><a href="cart.html"><img src="./images/icons/shopping-cart.png"></i></a></li>
+            <li><img src="./images/icons/user.png"></i></li>
 
           </ul>
         </div>
-
-        <div id="mobile">
-          <img id="bar" src="./images/icons/HamburgerMenu.png" alt="hamburger menu">
-        </div>
       </section>
-    
+
       <!--genre selection-->
 
       <section id="subhead">
@@ -83,10 +75,9 @@
         <div class = "topCardsGrid">
           <!--Card 1-->
           <div class = "card">
-            <!-- <div class = "image"> -->
-              <img class="image" src="https://images.pexels.com/photos/4153146/pexels-photo-4153146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <div class = image>
               <!--Add Later-->
-            <!-- </div> -->
+            </div>
             <div class = "info">
               <div class = "topInfo">
                 <p class="bookTitle">Book</p>
@@ -216,45 +207,177 @@
       </main>
 
 
-      
+      <main id="store">
+        <div class = "topCards">
+          <!--Card 1-->
+          <div class = "card">
+            <div class = image>
+              <!--Add Later-->
+            </div>
+            <div class = "info">
+              <div class = "topInfo">
+                <p class="bookTitle">Book</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/almostFive.png">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$25</p>
+              </div>  
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class = "card">
+            <div class = image>
+              <!--Add Later-->
+            </div>
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Book</p>
+                <p class = "outOfStock">Out of Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/Five.png">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$15</p>
+              </div>    
+            </div>
 
-      
+          </div>
+          <!--Card 3-->
+          <div class = "card">
+            <div class = image>
+              <!--Add Later-->
+            </div>
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Book</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/fourAndAHalf.png">
+              </div> 
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$30</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+        <div class = "bottomCards">
+          <!--Card 4-->
+          <div class = "card">
+            <div class = image>
+              <!--Add Later-->
+            </div>
+            <div class = "info">
+              <div class = "topInfo">
+                <p class="bookTitle">Book</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/almostFive.png">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$12</p>
+              </div>  
+            </div>
+          </div>
+          <!--Card 5-->
+          <div class = "card">
+            <div class = image>
+              <!--Add Later-->
+            </div>
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Book</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/Five.png">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$20</p>
+              </div>    
+            </div>
+
+          </div>
+          <!--Card 6-->
+          <div class = "card">
+            <div class = image>
+              <!--Add Later-->
+            </div>
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Book</p>
+                <p class = "outOfStock">Out of Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/fourAndAHalf.png">
+              </div> 
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$10</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class = footerContent>
+        <h2 class = "sr-only">Site Footer</h2>
+        <div class = "topFooter">
+          <div class="column1">
+            <h4>Customer Support</h4>
+            <p>Refund Policy</p>
+            <p>Contact Us</p>
+            <p>FAQs</p>
+          </div>
+
+          <div class="column2">
+            <h4>Account</h4>
+            <p>Manage</p>
+            <p>Contact Preferences</p>
+          </div>
+
+          <div class="column3">
+            <h4>About Upmesh</h4>
+            <p>Our Company</p>
+            <p>Careers</p>
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+          </div>
+
+          <div class="socials">
+            <img src="./images/icons/social_media_icons.png">
+          </div>
+        </div> 
+        <div class = "bottomFooter">
+          <div class="copyright">
+            <p>© 2023 Upmesh. All rights reserved.</p>
+          </div>
+    
+    </footer>
+
   </div>
-
-  <footer class = footerContent>
-    <h2 class = "sr-only">Site Footer</h2>
-    <div class = "topFooter">
-      <div class="column1">
-        <h4>Customer Support</h4>
-        <p>Refund Policy</p>
-        <p>Contact Us</p>
-        <p>FAQs</p>
-      </div>
-
-      <div class="column2">
-        <h4>Account</h4>
-        <p>Manage</p>
-        <p>Contact Preferences</p>
-      </div>
-
-      <div class="column3">
-        <h4>About Upmesh</h4>
-        <p>Our Company</p>
-        <p>Careers</p>
-        <p>Terms of Use</p>
-        <p>Privacy Policy</p>
-      </div>
-
-      <div class="socials">
-        <img src="./images/icons/social_media_icons.png">
-      </div>
-    </div> 
-    <div class = "bottomFooter">
-      <div class="copyright">
-        <p>© 2023 Upmesh. All rights reserved.</p>
-      </div>
-
-</footer>
 
     <!-- This is where we add our awesome JavaScript code -->
     <script src="./main.js"></script>
