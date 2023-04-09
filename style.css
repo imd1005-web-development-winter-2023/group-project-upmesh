@@ -164,6 +164,11 @@ subheader
  
 }
 
+#subhead li:nth-child(1)
+{
+  text-decoration: underline;
+}
+
 #genres {
   display: flex;
   align-items: center;
@@ -255,6 +260,7 @@ Footer
   /* width: 100%; */
   background-color: white;
   border-radius: 3rem;
+  border: 0.1rem solid rgba(0,0,0, .2);
   /* outline: solid; */
   /*filter: drop-shadow(-2rem 2rem 2rem); */
   
