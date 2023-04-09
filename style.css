@@ -719,9 +719,8 @@ main {
 
     .about .aboutUpmesh .aboutInfo p
     {
-      font-size: 1.3rem;
-      padding: 1rem 0;
-      padding-right: 3rem;
+      display: flex;
+      justify-content: center;
       text-align: center;
     }
 
