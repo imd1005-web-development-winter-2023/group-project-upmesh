@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the page title -->
+    <title>Group Project</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!--
+      ADD YOUR GROUP PROJECT CODE
+      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+    -->
+
+    <div>
+      <!--<div id="app"></div>-->
+
+      <!--Header-->
+
+      <section id="header">
+        <a href="#"><img src="./images/Logo.png" class="logo" alt="Upmesh"></a>
+
+        <div>
+          <ul id="navbar">
+            <form class="search">
+              <label class="sr-only" for="">Search bar</label>
+              <input name="search" id="search" type="text" required />
+            </form>
+            <li>Home</li>
+            <li><a href="index.html"></a>Shop</li>
+            <li>Help</li>
+            <a href = "#" id="close"><img src="./images/icons/close.png" alt="close"></a>
+          </ul>
+        </div>
+
+        <div>
+          <ul id="icons">
+            <li>
+              <a href="cart.html">
+                <img src="./images/icons/shopping-cart.png">
+                <span id="cart-count" class="red-circle">0</span>
+              </a>
+            </li>
+            <li><img src="./images/icons/user.png" alt="user"></li>
+
+          </ul>
+        </div>
+
+        <div id="mobile">
+          <img id="bar" src="./images/icons/HamburgerMenu.png" alt="hamburger menu">
+        </div>
+      </section>
+    
+      <!--genre selection-->
+
+      <section id="subhead">
+        <ul id="genres">
+          <li>Fantasy</li>
+          <li>Kids</li>
+          <li>Horror</li>
+          <li>Non-Fiction</li>
+          <li>Romance</li>
+          <li>Sci-Fi</li>
+        </ul>
+      </section>
+
+      <!--store section-->
+
+      <body>
+        <header>
+          <h1>My Shopping Cart</h1>
+          <p>Number of items: <span id="cart-count"></span></p>
+        </header>
+        <main id="cart-items">
+          <!-- This is where the items will be displayed -->
+        </main>
+        <script src="main.js"></script>
+      </body>
+      
+
+      
+    </div>
+
+  <footer class = footerContent>
+    <h2 class = "sr-only">Site Footer</h2>
+    <div class = "topFooter">
+      <div class="column1">
+        <h4>Customer Support</h4>
+        <p>Refund Policy</p>
+        <p>Contact Us</p>
+        <p>FAQs</p>
+      </div>
+
+      <div class="column2">
+        <h4>Account</h4>
+        <p>Manage</p>
+        <p>Contact Preferences</p>
+      </div>
+
+      <div class="column3">
+        <h4>About Upmesh</h4>
+        <p>Our Company</p>
+        <p>Careers</p>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="socials">
+        <img src="./images/icons/social_media_icons.png">
+      </div>
+    </div> 
+    <div class = "bottomFooter">
+      <div class="copyright">
+        <p>© 2023 Upmesh. All rights reserved.</p>
+      </div>
+
+</footer>
+
+    <!-- This is where we add our awesome JavaScript code -->
+    <script src="./main.js"></script>
+  </body>
+</html>
