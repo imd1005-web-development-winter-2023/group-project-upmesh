@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the page title -->
+    <title>Group Project</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!--
+      ADD YOUR GROUP PROJECT CODE
+      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+    -->
+
+    <div>
+      <!--<div id="app"></div>-->
+
+      <!--Header-->
+
+      <section id="header">
+        <a href="#"><img src="./images/Logo.png" class="logo" alt="Upmesh"></a>
+
+        <div>
+          <ul id="navbar">
+            <form class="search">
+              <label class="sr-only" for="">Search bar</label>
+              <input name="search" id="search" type="text" placeholder = "Search our Store" required />
+              <label class ="sr-only" for="">Search Button</label>
+              <button type="submit">
+                <img 
+                src="./images/Search-icon.png"
+                alt="Search button icon"
+                height="50">
+              </button>
+            </form>
+            <li><a href="indexLP.html">Home</a></li>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="">Help</a></li>
+            <a href = "#" id="close"><img src="./images/icons/close.png" alt="close"></a>
+          </ul>
+        </div>
+
+        <div>
+          <ul id="icons">
+            <li>
+              <a href="cart.html">
+                <img src="./images/icons/shopping-cart.png">
+                <span id="cart-count" class="red-circle">0</span>
+              </a>
+            </li>
+            <li><img src="./images/icons/user.png" alt="user"></li>
+
+          </ul>
+        </div>
+
+        <div id="mobile">
+          <img id="bar" src="./images/icons/HamburgerMenu.png" alt="hamburger menu">
+        </div>
+      </section>
+    
+      <!--genre selection-->
+
+      <!--<section id="subhead">
+        <ul id="genres">
+          <li>Fantasy</li>
+          <li>Kids</li>
+          <li>Horror</li>
+          <li>Non-Fiction</li>
+          <li>Romance</li>
+          <li>Sci-Fi</li>
+        </ul>
+      </section>-->
+
+      <!--Hero Section-->
+      <section class="hero">
+        <div class="content">
+          <h1>Welcome to the Upmesh Bookstore!</h1>
+          <p>Your go to place to order your favourite books. Browse our shop and we guarantee that you will find the book you're looking for!</p>
+          <a href="#" class="LPbutton">Learn More</a>
+        </div>
+        <div class="heroImage">
+          <img
+          class="imageForHero"
+          src="images/LandingPage/heroImage.jpg"
+          alt="person holding a book">
+        </div>
+      </section>
+
+      <!--Genres-->
+      <section class="genres">
+        <h2 class="sectionTitle">Browse a Wide Variety of Genres</h2>
+        <div class="cardContainer">
+          <div class="LPcard">
+            <img
+            src="images/LandingPage/genreRomance.jpg"
+            alt="Romantic Silhouette">
+            <h3>Romance</h3>
+            <p>Order books such as The Notebook, Outlander, The Proposal and more</p>
+          </div>
+          <div class="LPcard">
+            <img
+            src="images/LandingPage/genreScifi.jpg"
+            alt="Astronaut">
+            <h3>Sci-fi</h3>
+            <p>Order books such as Nineteen Eighty-four, Dune, The Martian and more</p>
+          </div>
+          <div class="LPcard">
+            <img
+            src="images/LandingPage/genreHorror.jpg"
+            alt="Skull">
+            <h3>Horror</h3>
+            <p>Order books such as It, A Head Full of Ghosts, House of Leaves and more</p>
+          </div>
+        </div>
+        <a href="index.html" class="LPbutton">Go to Store</a>
+      </section>
+
+      <!--About Upmesh-->
+      <section class="about">
+        <h2 class="sectionTitle">About Upmesh</h2>
+        <div class="aboutUpmesh">
+          <div class="aboutImage">
+            <img
+            src="images/LandingPage/aboutImage.jpg"
+            alt="person typing on computer">
+          </div>
+          <div class="aboutInfo">
+            <p>The Upmesh bookstore was created by four university students in a joint program between Carleton University 
+              and Algonquin College. While we started as school project we have now grown into a fully functionable store.</p>
+
+            <p>Order just about any book you can think of from Upmesh. We offer a wide variety of genres, age-groups and even 
+              languages. We frequently have sales and are always quick to restock your favoutite books when they become 
+              unavaliable. Upmesh is your go to place for book shopping!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Subscribe-->
+
+      <section class="subscribe">
+        <h2 class="sectionTitleException">Subscribe to get notified!</h2>
+        <p>At Upmesh, we are constantly adding to our wide stock of books. Subscribe to get notified when we begin to carry new ones. 
+          One of your favourites may be on there!
+        </p>
+        <form action="">
+          <input type="email" placeholder="Please enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <!--Contact Us-->
+
+      <!--<section class="contactUs">
+        <div class="contactUsImage">
+            <img
+            src="./images/LandingPage/contactUsImage.jpg"
+            alt="Hands on top of each other">
+        </div>
+        <form action="">
+            <h2 class="sectionTitle">Questions? Contact Us</h2>
+            <div class="contactInputBox">
+                <label>Name</label>
+                <input type="text" required>
+            </div>
+            <div class="contactInputBox">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+            <div class="contactInputBox">
+                <label>Number</label>
+                <input type="number" required>
+            </div>
+            <div class="contactInputBox">
+                <label>Message</label>
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        
+      </section>-->
+
+      <!--Footer-->
+      <footer class = footerContent>
+        <h2 class = "sr-only">Site Footer</h2>
+        <div class = "topFooter">
+          <div class="column1">
+            <h4>Customer Support</h4>
+            <p>Refund Policy</p>
+            <p>Contact Us</p>
+            <p>FAQs</p>
+          </div>
+    
+          <div class="column2">
+            <h4>Account</h4>
+            <p>Manage</p>
+            <p>Contact Preferences</p>
+          </div>
+    
+          <div class="column3">
+            <h4>About Upmesh</h4>
+            <p>Our Company</p>
+            <p>Careers</p>
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+          </div>
+    
+          <div class="socials">
+            <img src="./images/icons/social_media_icons.png">
+          </div>
+        </div> 
+        <div class = "bottomFooter">
+          <div class="copyright">
+            <p>© 2023 Upmesh. All rights reserved.</p>
+          </div>
+    
+    </footer>
+    
+        <!-- This is where we add our awesome JavaScript code -->
+        <script src="./main.js"></script>
+      </body>
+    </html>
