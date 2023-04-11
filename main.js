@@ -38,7 +38,8 @@ window.addEventListener('load', () => {
 addToCartButtons.forEach((button, index) => {
   const parent = button.parentNode;
   const price = parent.querySelector('.Cost').textContent;
-  //const bookTitle = parent.querySelector('.bookTitle').textContent;
+  const grandparent = button.parentNode.parentNode;
+  //const bookTitle = grandparent.querySelector('.bookTitle').textContent;
 
   button.addEventListener('click', () => {
     cartCount++;
