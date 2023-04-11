@@ -16,61 +16,44 @@ if (close) {
   })
 }
 
-//cart
 
-if (window.location.pathname === '/index.html') {
-  localStorage.removeItem('cartCount');
-  localStorage.removeItem('cartItems');
-}
+
+
+//cart
 
 let cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
 const cartCountSpan = document.getElementById('cart-count');
-const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
 const addToCartButtons = document.querySelectorAll('.addToCart');
+const cartList = [];
 
-addToCartButtons.forEach(button => {
+// Reset cartCount and cartList when page loads
+window.addEventListener('load', () => {
+  cartCount = 0;
+  cartCountSpan.style.display = 'none';
+  localStorage.removeItem('cartCount');
+  localStorage.removeItem('cartList');
+});
+
+addToCartButtons.forEach((button, index) => {
+  const parent = button.parentNode;
+  const price = parent.querySelector('.Cost').textContent;
+  //const bookTitle = parent.querySelector('.bookTitle').textContent;
+
   button.addEventListener('click', () => {
-    const card = button.closest('.card');
     cartCount++;
-    localStorage.setItem('cartCount', cartCount);
     cartCountSpan.textContent = cartCount;
-
-    cartItems.push(card);
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
     if (cartCount !== 0) {
       cartCountSpan.style.display = 'inline-block';
     } else {
       cartCountSpan.style.display = 'none';
     }
+
+    cartList.push({index, price});
+    localStorage.setItem('cartCount', cartCount);
+    localStorage.setItem('cartList', JSON.stringify(cartList));
+
+    console.log('Item added to cart:', {index, price});
   });
 });
-
-function displayCartItems() {
-  const cartItemsElement = document.getElementById('cart-items');
-  cartItemsElement.innerHTML = '';
-
-  cartItems.forEach(item => {
-    const itemElement = document.createElement('div');
-    itemElement.classList.add('cart-item');
-
-    const itemName = item.querySelector('.card-title').textContent;
-    const itemPrice = item.querySelector('.card-price').textContent;
-
-    const nameElement = document.createElement('h2');
-    nameElement.textContent = itemName;
-
-    const priceElement = document.createElement('p');
-    priceElement.textContent = itemPrice;
-
-    itemElement.appendChild(nameElement);
-    itemElement.appendChild(priceElement);
-
-    cartItemsElement.appendChild(itemElement);
-  });
-
-  document.getElementById('cart-count').textContent = cartCount;
-}
-
-displayCartItems();

@@ -71,30 +71,18 @@
         </div>
       </section>
     
-      <!--genre selection-->
 
-      <section id="subhead">
-        <ul id="genres">
-          <li>Fantasy</li>
-          <li>Kids</li>
-          <li>Horror</li>
-          <li>Non-Fiction</li>
-          <li>Romance</li>
-          <li>Sci-Fi</li>
-        </ul>
-      </section>
 
       <!--store section-->
 
       <body>
         <header>
           <h1>My Shopping Cart</h1>
-          <p>Number of items: <span id="cart-count"></span></p>
+          <p>Number of items: <span id="cart-count">0</span></p>
+          <div id="cart-container">
+            <!-- Cart items will be added here dynamically -->
+          </div>
         </header>
-        <main id="cart-items">
-          <!-- This is where the items will be displayed -->
-        </main>
-        <script src="main.js"></script>
       </body>
       
 
@@ -137,6 +125,6 @@
 </footer>
 
     <!-- This is where we add our awesome JavaScript code -->
-    <script src="./main.js"></script>
+    <script src="./cart_code.js"></script>
   </body>
 </html>
