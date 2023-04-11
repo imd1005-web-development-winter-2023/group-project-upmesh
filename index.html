@@ -21,15 +21,267 @@
   </head>
   <body>
     <!--
-
       ADD YOUR GROUP PROJECT CODE
-
       YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
     -->
-    <main>
-      <div id="app"></div>
-    </main>
+
+    <div>
+      <!--<div id="app"></div>-->
+
+      <!--Header-->
+
+      <section id="header">
+        <a href="indexLP.html"><img src="./images/Logo.png" class="logo" alt="Upmesh"></a>
+
+        <div>
+          <ul id="navbar">
+            <form class="search">
+              <label class="sr-only" for="">Search bar</label>
+              <input name="search" id="search" placeholder = "Search our Store" type="text" required />
+              <label class ="sr-only" for="">Search Button</label>
+              <button type="submit">
+                <img 
+                src="./images/Search-icon.png"
+                alt="Search button icon"
+                height="50">
+              </button>
+            </form>
+            <li><a href="indexLP.html">Home</a></li>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="">Help</a></li>
+            <a href = "#" id="close"><img src="./images/icons/close.png" alt="close"></a>
+          </ul>
+        </div>
+
+        <div>
+          <ul id="icons">
+            <li>
+              <a href="cart.html">
+                <img src="./images/icons/shopping-cart.png">
+                <span id="cart-count" class="red-circle">0</span>
+              </a>
+            </li>
+            <li><img src="./images/icons/user.png" alt="user"></li>
+
+          </ul>
+        </div>
+
+        <div id="mobile">
+          <img id="bar" src="./images/icons/HamburgerMenu.png" alt="hamburger menu">
+        </div>
+      </section>
+    
+      <!--genre selection-->
+
+      <section id="subhead">
+        <ul id="genres">
+          <li>Fantasy</li>
+          <li>Kids</li>
+          <li>Horror</li>
+          <li>Non-Fiction</li>
+          <li>Romance</li>
+          <li>Sci-Fi</li>
+        </ul>
+      </section>
+
+      <!--store section-->
+
+      <!--Placeholder/test image-->
+      <!--src="https://images.pexels.com/photos/4153146/pexels-photo-4153146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"--> 
+
+      <main id="store">
+        <div class = "topCardsGrid">
+          <!--Card 1-->
+          <div class = "card">
+            <!-- <div class = "image"> -->
+              <img class="image"
+              src="./images/Books/theLionTheWitchAndTheWardrobe.png"
+              alt="Book cover for C.S. Lewis' The Chronicals of Narnia: The Lion the Witch and the Wardrobe">
+              <!--Add Later-->
+            <!-- </div> -->
+            <div class = "info">
+              <div class = "topInfo">
+                <p class="bookTitle">Narnia</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/almostFive.png"
+                alt="Almost five stars">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$25</p>
+              </div>  
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class = "card">
+            <!--<div class = image>-->
+              <img class="image" 
+              src="images/Books/fairyTale.png"
+              alt="Book cover for Stephen King's Fairy Tale">
+            <!--</div>-->
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Fairy Tale</p>
+                <p class = "outOfStock">Out of Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/Five.png">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$15</p>
+              </div>    
+            </div>
+
+          </div>
+          <!--Card 3-->
+          <div class = "card">
+            <!--<div class = image>-->
+              <img class="image" 
+              src="images/Books/babel.png"
+              alt="Book cover for R.F. Kuang's Babel: an arcane history">
+            <!--</div>-->
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Babel</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/fourAndAHalf.png"
+                alt="four and a half stars">
+              </div> 
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$30</p>
+              </div>   
+            </div>
+          </div>
+        
+        
+          <!--Card 4-->
+          <div class = "card">
+            <!--<div class = image>-->
+              <img class="image" 
+              src="images/Books/bloodLikeMagic.png"
+              alt="Book cover for Liselle Sambury's Blood Like Magic">
+            <!--</div>-->
+            <div class = "info">
+              <div class = "topInfo">
+                <p class="bookTitle">Blood Like Magic</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/almostFive.png"
+                alt="Almost five stars">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$12</p>
+              </div>  
+            </div>
+          </div>
+          <!--Card 5-->
+          <div class = "card">
+            <!--<div class = image>-->
+              <img class="image" 
+              src="images/Books/extasia.png"
+              alt="Book cover for Claire Legrand's Extasia">
+            <!--</div>-->
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Extasia</p>
+                <p class = "inStock">In Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/Five.png"
+                alt="Five stars">
+              </div>
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$20</p>
+              </div>    
+            </div>
+
+          </div>
+          <!--Card 6-->
+          <div class = "card">
+            <!--<div class = image>-->
+              <img class="image" 
+              src="images/Books/infinityReaper.png"
+              alt="Book cover for Adam Silvera's Infinity Reaper">
+            <!--</div>-->
+            <div class = "info">
+              <div class= "topInfo">
+                <p class = bookTitle>Infinity Reaper</p>
+                <p class = "outOfStock">Out of Stock</p>
+              </div>
+              <div class = "stars">
+                <img 
+                class = "starImage"
+                src="./images/Ratings/fourAndAHalf.png"
+                alt="four and a half stars">
+              </div> 
+              <div class= "Price">
+                <button class="addToCart">Add to Cart</button>
+                <p class="Cost">$10</p>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      
+
+      
+  </div>
+
+  <footer class = footerContent>
+    <h2 class = "sr-only">Site Footer</h2>
+    <div class = "topFooter">
+      <div class="column1">
+        <h4>Customer Support</h4>
+        <p>Refund Policy</p>
+        <p>Contact Us</p>
+        <p>FAQs</p>
+      </div>
+
+      <div class="column2">
+        <h4>Account</h4>
+        <p>Manage</p>
+        <p>Contact Preferences</p>
+      </div>
+
+      <div class="column3">
+        <h4>About Dotus</h4>
+        <p>Our Company</p>
+        <p>Careers</p>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="socials">
+        <img src="./images/icons/social_media_icons.png">
+      </div>
+    </div> 
+    <div class = "bottomFooter">
+      <div class="copyright">
+        <p>© 2023 Dotus. All rights reserved.</p>
+      </div>
+
+</footer>
 
     <!-- This is where we add our awesome JavaScript code -->
     <script src="./main.js"></script>
